@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "AI Resume Builder",
+    "description": "Create professional resumes using AI-powered suggestions.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "FaFileAlt"
+  },
+  {
+    "id": 2,
+    "name": "Social Media Scheduler",
+    "description": "Plan and schedule your posts across multiple platforms.",
+    "price": 19.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Auto posting", "Analytics dashboard", "Multi-platform support"],
+    "icon": "FaCalendarAlt"
+  },
+  {
+    "id": 3,
+    "name": "Logo Maker Pro",
+    "description": "Design stunning logos in minutes with AI assistance.",
+    "price": 29.99,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["500+ icons", "Custom colors", "High-res download"],
+    "icon": "FaPaintBrush"
+  },
+  {
+    "id": 4,
+    "name": "Email Marketing Tool",
+    "description": "Boost your sales with automated email campaigns.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Email templates", "Automation", "Subscriber tracking"],
+    "icon": "FaEnvelope"
+  },
+  {
+    "id": 5,
+    "name": "Website Builder",
+    "description": "Create responsive websites without coding.",
+    "price": 49.99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Drag & drop builder", "Free hosting", "SEO tools"],
+    "icon": "FaGlobe"
+  },
+  {
+    "id": 6,
+    "name": "Keyword Research Tool",
+    "description": "Find high-ranking keywords to grow your SEO.",
+    "price": 12.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Keyword suggestions", "Search volume data", "Competitor analysis"],
+    "icon": "FaSearch"
+  },
+  {
+    "id": 7,
+    "name": "Video Editor Lite",
+    "description": "Edit videos quickly with easy-to-use tools.",
+    "price": 24.99,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Drag & drop editing", "Transitions", "Export in HD"],
+    "icon": "FaVideo"
+  },
+  {
+    "id": 8,
+    "name": "Analytics Dashboard",
+    "description": "Track and analyze your business performance in real-time.",
+    "price": 39.99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Real-time data", "Custom reports", "Integration support"],
+    "icon": "FaChartLine"
+  }
+]
