@@ -8,7 +8,7 @@
     "tag": "popular",
     "tagType": "popular",
     "features": ["100+ templates", "ATS optimization", "Export to PDF"],
-    "icon": "FaFileAlt"
+    "icon": "portfolio.png"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "tag": "best seller",
     "tagType": "best seller",
     "features": ["Auto posting", "Analytics dashboard", "Multi-platform support"],
-    "icon": "FaCalendarAlt"
+    "icon": "social-media.png"
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "tag": "new",
     "tagType": "new",
     "features": ["500+ icons", "Custom colors", "High-res download"],
-    "icon": "FaPaintBrush"
+    "icon": "design-tool.png"
   },
   {
     "id": 4,

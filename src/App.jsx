@@ -3,6 +3,7 @@ import Navbar from './components/Navbar/Navbar'
 import Banner from './components/Banner/Banner'
 import Tools from './components/Tools/Tools'
 import Cart from './components/Cart/Cart'
+import Steps from './components/Steps/Steps'
 import Footer from './components/Footer/Footer'
 import { ToastContainer } from 'react-toastify';
 import './App.css'
@@ -31,6 +32,7 @@ function App() {
       {tabActive === "Tools" && <Tools toolPromise={toolPromise} carts={carts} setCarts={setCarts}/>}
       {tabActive === "Cart" && <Cart carts={carts} setCarts={setCarts}/>}
       
+      <Steps/>
       <Footer/>
       <ToastContainer />
     </>
