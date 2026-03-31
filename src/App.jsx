@@ -27,7 +27,7 @@ function App() {
         <input type="radio" name="my_tabs_1" className={`tab ${tabActive === "Cart" ? "bg-purple-700 text-white" : "bg-none"}`} aria-label="Cart" onClick={() => setTabActive("Cart")} />
       </div>
       
-      {tabActive === "Tools" && <Tools/>}
+      {tabActive === "Tools" && <Tools toolPromise={toolPromise}/>}
       {tabActive === "Cart" && <Cart/>}
       
       <Footer/>

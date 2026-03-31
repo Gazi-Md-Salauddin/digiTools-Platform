@@ -1,6 +1,7 @@
-import React from 'react'
+import { use } from 'react'
 
-const Tools = () => {
+const Tools = ({toolPromise}) => {
+  const tools = use(toolPromise)
   
   return (
     <div>
@@ -10,19 +11,20 @@ const Tools = () => {
       </div>
       
       <div>
-        <div className="card w-96 bg-base-100 shadow-sm">
+        {tools.map(tool => (
+        <div key={tool.id} className="card w-96 bg-base-100 shadow-sm">
           <div className="card-body">
             
             <span className="badge badge-xs badge-warning">Most Popular</span>
             
             <div className="">
-              <h2 className="text-3xl font-bold">Premium</h2>
-              <p></p>
-              <span className="text-xl">$29/mo</span>
+              <h2 className="text-3xl font-bold">{tool.name}</h2>
+              <p className="py-2">{tool.description}</p>
+              <span className="text-xl">${tool.price}/mo</span>
             </div>
             
             <ul className="mt-6 flex flex-col gap-2 text-xs">
-              <li>
+              <li>{tool.}
                 <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
                 <span>High-resolution image generation</span>
               </li>
@@ -52,6 +54,9 @@ const Tools = () => {
             </div>
           </div>
         </div>
+        
+        ))}
+        
       </div>
     </div>  
     
