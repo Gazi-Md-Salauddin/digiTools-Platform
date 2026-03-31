@@ -15,7 +15,7 @@ const getTools = async () => {
 
 function App() {
   const [tabActive, setTabActive] = useState("Tools")
-  
+  const [carts, setCarts] = useState([])
 
   return (
     <>
@@ -24,11 +24,11 @@ function App() {
       <div className="tabs tabs-box justify-center">
         <input type="radio" name="my_tabs_1" className={`tab ${tabActive === "Tools" ? "bg-purple-700 text-white" : "bg-none"}`} aria-label="Products" onClick={() => setTabActive("Tools")}
   defaultChecked/>
-        <input type="radio" name="my_tabs_1" className={`tab ${tabActive === "Cart" ? "bg-purple-700 text-white" : "bg-none"}`} aria-label="Cart" onClick={() => setTabActive("Cart")} />
+        <input type="radio" name="my_tabs_1" className={`tab ${tabActive === "Cart" ? "bg-purple-700 text-white" : "bg-none"}`} aria-label={`Cart(${carts.length})`} onClick={() => setTabActive("Cart")} />
       </div>
       
-      {tabActive === "Tools" && <Tools toolPromise={toolPromise}/>}
-      {tabActive === "Cart" && <Cart/>}
+      {tabActive === "Tools" && <Tools toolPromise={toolPromise} carts={carts} setCarts={setCarts}/>}
+      {tabActive === "Cart" && <Cart carts={carts} setCarts={setCarts}/>}
       
       <Footer/>
     </>
