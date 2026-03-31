@@ -1,10 +1,18 @@
 import React, { useState } from 'react'
+import { toast } from 'react-toastify';
 
 const ToolCard = ({tool, carts, setCarts}) => {
   const [isBuy, setIsBuy] = useState(false)
   const handleBuyNow = () => {
     setIsBuy(true)
+    const isFound = carts.find((item) => item.id === tool.id)
+    if(isFound){
+      toast.error("item Already exist!")
+      return;
+    }
+    
     setCarts([...carts, tool])
+    toast.success("item added to cart")
   }
   return (
     <div key={tool.id} className="card w-full max-w-sm bg-base-100 shadow-sm">

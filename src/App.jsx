@@ -4,6 +4,7 @@ import Banner from './components/Banner/Banner'
 import Tools from './components/Tools/Tools'
 import Cart from './components/Cart/Cart'
 import Footer from './components/Footer/Footer'
+import { ToastContainer } from 'react-toastify';
 import './App.css'
 
 const getTools = async () => {
@@ -19,7 +20,7 @@ function App() {
 
   return (
     <>
-      <Navbar/>
+      <Navbar carts={carts}/>
       <Banner/>
       <div className="tabs tabs-box justify-center">
         <input type="radio" name="my_tabs_1" className={`tab ${tabActive === "Tools" ? "bg-purple-700 text-white" : "bg-none"}`} aria-label="Products" onClick={() => setTabActive("Tools")}
@@ -31,6 +32,7 @@ function App() {
       {tabActive === "Cart" && <Cart carts={carts} setCarts={setCarts}/>}
       
       <Footer/>
+      <ToastContainer />
     </>
   )
 }
