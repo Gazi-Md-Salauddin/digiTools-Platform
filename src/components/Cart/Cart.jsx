@@ -1,9 +1,19 @@
 import React from 'react'
 
 const Cart = ({ carts, setCarts }) => {
+     {/*clear all data in cart*/}
+  const handlePayment = () => {
+    setCarts([])
+  }
   
     {/*total price calculate*/}
   const totalPrice = carts.reduce((sum, item) => sum + item.price, 0).toFixed(2)
+  
+  
+  const handleDelete = (item) => {
+    const filteredArray = carts.filter((c) => c.id !== item.id)
+    setCarts(filteredArray)
+  }
   return (
     
     <div className="mx-4">
@@ -26,7 +36,7 @@ const Cart = ({ carts, setCarts }) => {
               
               {/*delete button*/}
           <div className="text-red-500">
-            <button>Delete</button>
+            <button onClick={() => handleDelete(item)}>Delete</button>
           </div>
           
         </div>
@@ -45,7 +55,7 @@ const Cart = ({ carts, setCarts }) => {
       
         {/*checkout button*/}
       {carts.length > 0 && (
-      <button className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-full btn-block text-white">Proceed to Checkout</button>
+      <button onClick={handlePayment} className="bg-purple-700 rounded-full w-full mt-5 mb-5 py-2 font-bold text-white mx-auto">Proceed to Checkout</button>
       )}
     </div>
   )
