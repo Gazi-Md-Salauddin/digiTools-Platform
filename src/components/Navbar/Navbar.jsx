@@ -3,16 +3,34 @@ import React from 'react'
 const Navbar = () => {
   return (
     <div>
-      <div className="navbar bg-base-100 shadow-sm px-[80px]">
-
+      <div className="navbar bg-base-100 shadow-sm md:px-[75px]">
+        
+        {/*humberger menu*/}
+        <div className="md:hidden">
+          <div className="dropdown dropdown-start">
+            <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /> </svg>
+            </div>
+            <ul
+             tabIndex="-1"
+             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+              <li><a>Products</a></li>
+              <li><a>Features</a></li>
+              <li><a>Pricing</a></li>
+              <li><a>Testimonial</a></li>
+              <li><a>FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+        
         {/*Title*/}
         <div className="flex-1">
           <a className="text-xl font-bold bg-gradient-to-r from-blue-700 to-purple-700 bg-clip-text text-transparent">DigiTools</a>
         </div>
         
         {/*menu*/}
-        <div className="flex-1 flex justify-center">
-          <ul className="flex gap-4 px-4">
+        <div className="flex-1 flex justify-center hidden md:block">
+          <ul className="flex gap-4 px-3">
             <li><a>Products</a></li>
             <li><a>Features</a></li>
             <li><a>Pricing</a></li>
@@ -20,6 +38,7 @@ const Navbar = () => {
             <li><a>FAQ</a></li>
           </ul>
         </div>
+        
         
         {/*cart*/}
         <div className="flex-1 flex justify-end gap-4">
@@ -36,7 +55,7 @@ const Navbar = () => {
           {/*Buttons*/}
           <div className="flex gap-2">
             <button>LogIn</button>
-            <button className="btn bg-gradient-to-r from-blue-700 to-purple-700 rounded-full text-white">Get Started</button>
+            <button className="px-3 md:px-4 bg-gradient-to-r from-blue-700 to-purple-700 rounded-full text-white">Get Started</button>
           </div>
         </div>
       </div>
