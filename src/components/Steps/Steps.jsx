@@ -11,7 +11,7 @@ const Steps = () => {
         <p>Start using premium digital tools in minutes, not hours.</p>
       </div>
       
-      <div className="flex justify-between">
+      <div className="md:flex justify-between">
         <div className="text-center px-4 py-8 flex flex-col items-center border border-gray-200 rounded-md">
           <span className="bg-purple-600 text-white rounded-full p-2 ml-60 mb-2">01</span>
           <img src={UserImage} alt="User" className="w-10 h-10 bg-purple-200 rounded-full p-2" />

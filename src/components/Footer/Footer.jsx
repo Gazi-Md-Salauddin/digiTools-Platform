@@ -6,8 +6,11 @@ import { FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
   return (
     <div>
-      <div className="bg-[#101727] text-white py-[60px] px-[80px]">
-        <div className="flex justify-between">
+      
+      <div className="bg-[#101727] text-white px-4 py-2 max-w-6xl mx-auto md:py-[60px] px-[80px]">
+        <div className="space-y-4 text-center md:flex justify-between">
+          
+            {/*heading and description*/}
           <div>
             <h1 className="text-2xl font-bold">DigiTools</h1>
             <p>Premium digital tools for creators,<br></br> professionals, and businesses. Work smarter<br></br> with our suite of powerful tools.</p>
@@ -42,22 +45,22 @@ const Footer = () => {
               <li><a>Contact</a></li>
             </ul>
           </div>
-          
+           
+                {/*social media icon*/}
           <div>
             <h2 className="text-xl font-semibold">Social Links</h2>
-            <div className="flex justify-between">
+            <div className="flex justify-center gap-4">
               <MdOutlineFacebook />
               <FaInstagram />
               <FaXTwitter />
             </div>
-            
           </div>
-          
-          
         </div>
-        <div className="flex justify-between mt-[60px] mb-4">
+        
+               {/*copyright*/}
+        <div className="mt-4 mb-2 space-y-2 md:flex justify-between mt-[60px] mb-4">
             <p>&copy; 2026 DigiTools. All rights reserved. </p>
-            <div className="flex justify-between gap-3">
+            <div className="text-center md:flex justify-between gap-3">
               <p>Privacy Plicy</p>
               <p>Terms of Service</p>
               <p>Cookies</p>
