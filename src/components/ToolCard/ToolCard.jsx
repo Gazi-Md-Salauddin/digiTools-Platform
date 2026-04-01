@@ -17,8 +17,11 @@ const ToolCard = ({tool, carts, setCarts}) => {
   return (
     <div key={tool.id} className="card w-full max-w-sm bg-base-100 shadow-sm">
           <div className="card-body">
-            <img/>
-            <span className="badge badge-xs badge-warning flex justify-end ml-60">{tool.tag}</span>
+            <span className="badge badge-xs badge-warning flex justify-end ml-48">{tool.tag}</span>
+
+            <div className="w-12 h-12 bg-white p-2 rounded-full shadow">
+            <img src={tool.icon} alt={tool.name}/>
+            </div>
             
             <div>
               <h2 className="text-3xl font-bold">{tool.name}</h2>

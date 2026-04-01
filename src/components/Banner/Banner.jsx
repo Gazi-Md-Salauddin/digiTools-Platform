@@ -7,7 +7,7 @@ const Banner = () => {
     <div>
       
       {/*heading and description*/}
-      <div className="flex flex-col-reverse lg:flex-row items-center justify-between px-4 sm:px-8 lg:px-16 py:10 lg:py-16 gap-10">
+      <div className="flex flex-col-reverse md:flex-row py-8 lg:flex-row items-center justify-between px-4 sm:px-8 lg:px-12 py:10 lg:py-16 gap-10">
         <div className="space-y-4">
           <span className="bg-[#E1E7FF] rounded-full px-3 py-1 text-sm inline-block">New: AI-Powered Tools Available</span>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mt-4">Supercharge Your <br></br>Digital Workflow</h1>

@@ -1,5 +1,7 @@
 import React from 'react'
 import { toast } from 'react-toastify';
+import CartIcon from '../../assets/products/shopping-cart.png'
+
 
 const Cart = ({ carts, setCarts }) => {
      {/*clear all data in cart*/}
@@ -19,7 +21,7 @@ const Cart = ({ carts, setCarts }) => {
   }
   return (
     
-    <div className="mx-4">
+    <div className="mx-4 shadow">
       
          {/*cart title and description*/}
       <div className="text-center mt-8 space-y-2 mb-4">
@@ -28,13 +30,22 @@ const Cart = ({ carts, setCarts }) => {
       </div>
       <h1 className="text-2xl font-bold ">Your Carts</h1>
       {carts.length === 0 ? (
-      <h1 className="text-3xl font-bold text-center m-8">Your Cart is empty</h1>
+      <div className="text-center py-8">
+        <img src={CartIcon} alt="Cart" className="w-20 mx-auto"/>
+        <h1 className="text-3xl font-bold text-center m-8">Your Cart is empty</h1>
+      </div>
       ) : (
       
-        carts.map((item) => ( <div key={item.id} className="flex justify-between items-center p-14 mx-6 mt-8 border border-gray-400 rounded-md">
-          <div>
-            <h1 className="text-black text-2xl">{item.name}</h1>
-            <p className="text-black ">${item.price}/Mo</p>
+        carts.map((item) => ( <div key={item.id} className="space-y-6 md:flex justify-between items-center p-14 mx-6 mt-8 border border-gray-400 rounded-md">
+          <div className="flex justify-center space-x-2">
+            <div className="w-12 h-12 bg-white p-2 rounded-full shadow">
+              <img src={item.icon} alt={item.name}/>
+            </div>
+            
+            <div>
+              <h1 className="text-black text-2xl">{item.name}</h1>
+              <p className="text-black ">${item.price}/Mo</p>
+            </div>
           </div>
               
               {/*delete button*/}

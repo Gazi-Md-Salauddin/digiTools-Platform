@@ -11,11 +11,12 @@ const Footer = () => {
         <div className="space-y-4 text-center md:flex justify-between">
           
             {/*heading and description*/}
-          <div>
+          <div className="mt-6">
             <h1 className="text-2xl font-bold">DigiTools</h1>
             <p>Premium digital tools for creators,<br></br> professionals, and businesses. Work smarter<br></br> with our suite of powerful tools.</p>
           </div>
           
+                 {/*product*/}
           <div>
             <h2 className="text-xl font-semibold">Product</h2>
             <ul>
@@ -25,7 +26,8 @@ const Footer = () => {
               <li><a>Integrations</a></li>
             </ul>
           </div>
-          
+                
+                {/*company*/}
           <div>
             <h2 className="text-xl font-semibold">Company</h2>
             <ul>
@@ -36,6 +38,7 @@ const Footer = () => {
             </ul>
           </div>
           
+                  {/*Resources*/}
           <div>
             <h2 className="text-xl font-semibold">Resources</h2>
             <ul>

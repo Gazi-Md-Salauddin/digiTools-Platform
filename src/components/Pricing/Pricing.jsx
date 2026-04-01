@@ -3,13 +3,13 @@ import React from 'react'
 const Pricing = () => {
   return (
     <div>
-      <div className="text-center mt-6">
+      <div className="text-center pt-6 px-2 md:pt-10">
         <h1 className="text-2xl font-bold">Simple, Transparent Pricing</h1>
         <p>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
       </div>
-      <div className="mt-6 gap-4 md:flex justify-center relative">
+      <div className="mt-6 pt-6 mb-8 gap-4 shadow md:flex justify-center relative">
         <div>
-          <div className="card max-w-96 bg-base-100 shadow-sm">
+          <div className="card max-w-96 bg-base-100 shadow">
             <div className="card-body">
               <div className="">
                 <h2 className="text-3xl font-bold">Starter</h2>
@@ -36,7 +36,7 @@ const Pricing = () => {
                 
               </ul>
               <div className="mt-6">
-                <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white btn-block">Get Started For Free</button>
+                <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white btn-block rounded-full">Get Started For Free</button>
               </div>
             </div>
           </div>
@@ -77,7 +77,7 @@ const Pricing = () => {
               </li>
             </ul>
             <div className="mt-6">
-              <button className="btn bg-white text-purple-500 btn-block">Start Pro Trial</button>
+              <button className="btn bg-white text-purple-500 btn-block rounded-full">Start Pro Trial</button>
             </div>
           </div>
         </div>
@@ -117,7 +117,7 @@ const Pricing = () => {
                 </li>
               </ul>
               <div className="mt-6">
-                <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white btn-block">Contact Sales</button>
+                <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white btn-block rounded-full">Contact Sales</button>
               </div>
             </div>
           </div>

@@ -3,7 +3,7 @@ import React from 'react'
 const Navbar = ({ carts }) => {
   return (
     <div>
-      <div className="navbar bg-base-100 shadow-sm md:px-[75px]">
+      <div className="navbar bg-base-100 shadow-sm md:px-[45px]">
         
         {/*humberger menu*/}
         <div className="md:hidden">
@@ -55,7 +55,7 @@ const Navbar = ({ carts }) => {
           {/*Buttons*/}
           <div className="flex gap-2">
             <button>LogIn</button>
-            <button className="px-4 py-2 md:px-4 bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full">Get Started</button>
+            <button className="text-[14px] px-4 py-2 bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-xl items-center whitespace-nowrap">Get Started</button>
           </div>
         </div>
       </div>

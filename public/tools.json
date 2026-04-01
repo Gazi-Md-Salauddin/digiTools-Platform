@@ -8,7 +8,7 @@
     "tag": "popular",
     "tagType": "popular",
     "features": ["100+ templates", "ATS optimization", "Export to PDF"],
-    "icon": "portfolio.png"
+    "icon": "https://i.ibb.co.com/HDn2JH0y/portfolio.png"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "tag": "best seller",
     "tagType": "best seller",
     "features": ["Auto posting", "Analytics dashboard", "Multi-platform support"],
-    "icon": "social-media.png"
+    "icon": "https://i.ibb.co.com/9HgS5KDK/social-media.png"
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "tag": "new",
     "tagType": "new",
     "features": ["500+ icons", "Custom colors", "High-res download"],
-    "icon": "design-tool.png"
+    "icon": "https://i.ibb.co.com/DfZkMsQ6/design-tool.png"
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@
     "tag": "popular",
     "tagType": "popular",
     "features": ["Email templates", "Automation", "Subscriber tracking"],
-    "icon": "FaEnvelope"
+    "icon": "https://i.ibb.co.com/mVFTFdJw/operation.png"
   },
   {
     "id": 5,
@@ -52,7 +52,7 @@
     "tag": "best seller",
     "tagType": "best seller",
     "features": ["Drag & drop builder", "Free hosting", "SEO tools"],
-    "icon": "FaGlobe"
+    "icon": "https://i.ibb.co.com/3GgbG6P/optimization-1431511.png"
   },
   {
     "id": 6,
@@ -63,7 +63,7 @@
     "tag": "popular",
     "tagType": "popular",
     "features": ["Keyword suggestions", "Search volume data", "Competitor analysis"],
-    "icon": "FaSearch"
+    "icon": "https://i.ibb.co.com/WvdBPjK8/business-13254695.png"
   },
   {
     "id": 7,
@@ -74,7 +74,7 @@
     "tag": "new",
     "tagType": "new",
     "features": ["Drag & drop editing", "Transitions", "Export in HD"],
-    "icon": "FaVideo"
+    "icon": "https://i.ibb.co.com/Ndqmh6v6/vecteezy-clapperboard-icon-design-31737797.png"
   },
   {
     "id": 8,
@@ -85,6 +85,6 @@
     "tag": "best seller",
     "tagType": "best seller",
     "features": ["Real-time data", "Custom reports", "Integration support"],
-    "icon": "FaChartLine"
+    "icon": "https://i.ibb.co.com/sdWnrmxh/dashboard.png"
   }
 ]
