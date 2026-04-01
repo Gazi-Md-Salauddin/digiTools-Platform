@@ -5,6 +5,7 @@ import Tools from './components/Tools/Tools'
 import Cart from './components/Cart/Cart'
 import Steps from './components/Steps/Steps'
 import Pricing from './components/Pricing/Pricing'
+import WorkFlow from './components/WorkFlow/WorkFlow'
 import Footer from './components/Footer/Footer'
 import { ToastContainer } from 'react-toastify';
 import './App.css'
@@ -35,6 +36,7 @@ function App() {
       
       <Steps/>
       <Pricing/>
+      <WorkFlow/>
       <Footer/>
       <ToastContainer />
     </>
