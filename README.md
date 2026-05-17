@@ -12,4 +12,4 @@ A modern digital toils buying platform where users can explore, purchase, and ma
 - Add to cart
 - Rating badge
 
-
+Live link: https://digitools-platform1.netlify.app
